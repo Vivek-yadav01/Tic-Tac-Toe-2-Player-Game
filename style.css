@@ -225,8 +225,8 @@ body {
     }
 
     .winner {
-        margin-top: 61vh;
-        margin-left: 0px;
+        margin-top: 62vh;
+        margin-left: 2px;
         margin-right: 2px;
         color: rgb(170, 130, 130);
     text-shadow: rgb(247, 142, 142) 0px 0px 20px;
@@ -243,6 +243,8 @@ body {
 
     .restart {
         font-size: 20px;
+        border: 1px
+        
         height: 40px;
         width: 120px;
         background-color: rgb(50, 48, 48);
