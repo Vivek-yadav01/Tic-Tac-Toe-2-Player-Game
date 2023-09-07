@@ -100,7 +100,7 @@ body {
 .winner {
     margin-left: 80px;
     color: rgb(170, 130, 130);
-    text-shadow: rgb(243, 124, 124) 0px 0px 20px;
+    text-shadow: rgb(247, 142, 142) 0px 0px 20px;
 
 }
 
@@ -132,33 +132,34 @@ body {
 
 @media(max-width:500px) {
     body {
-        padding: 20px;
+        padding: 4px;
 
     }
 
     .container {
         background-color: rgb(198, 193, 193);
-        height: 40vh;
-        width: 75vw;
+        margin-top: 0px;
+        height: 60vh;
+        width: 100vw;
         margin: auto;
-        padding: 0;
+        padding: 4px;
         overflow: hidden;
-        padding: 5px;
+       
     }
 
     .row {
         display: flex;
-        margin: 0 5vw;
+        margin: 0;
        
     }
 
     .box {
-        width: 60px;
-        height: 60px;
+        width: 45vw;
+        height: 40vw;
         background-color: rgb(255, 255, 255);
 
         margin: 2px;
-        border-radius: 1px;
+        border-radius: 5px;
         box-shadow: 2px 2px 10px 2px rgb(53, 53, 53) inset;
         cursor: pointer;
         display: flex;
@@ -170,7 +171,7 @@ body {
 
     .box2 {
         color: white;
-        font-size: 40px;
+        font-size: 80px;
         transform-style: scale(2);
 
         text-shadow: red 1px 1px 5px;
@@ -182,7 +183,7 @@ body {
 
     .box3 {
         color: grey;
-        font-size: 40px;
+        font-size: 80px;
         transform-style: scale(2);
         text-shadow: red 1px 1px 4px;
         transition: all 200ms 0s;
@@ -198,7 +199,7 @@ body {
     .text {
         text-align: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 15px;
+        font-size: 0px;
         color: white;
         text-shadow: red 0px 0px 20px;
 
@@ -212,10 +213,10 @@ body {
     }
 
     .common {
-        margin-top: 100px;
+      
 
-        height: 100px;
-        width: 80px;
+        height: 1px;
+        width: 1px;
         color: white;
         text-shadow: red 0px 0px 5px;
         margin-left: 5px;
@@ -224,24 +225,26 @@ body {
     }
 
     .winner {
+        margin-top: 61vh;
         margin-left: 0px;
         margin-right: 2px;
-        color: white;
-        text-shadow: red 0px 0px 8px;
+        color: rgb(170, 130, 130);
+    text-shadow: rgb(247, 142, 142) 0px 0px 20px;
 
     }
 
     .chicken {
+        margin-top: 500px;
         margin-right: 0px;
         margin-left: 2px;
-        color: white;
-        text-shadow: red 0px 0px 8px;
+        color: rgb(170, 130, 130);
+        text-shadow: rgb(247, 142, 142) 0px 0px 20px;
     }
 
     .restart {
-        font-size: 10px;
-        height: 20px;
-        width: 100px;
+        font-size: 20px;
+        height: 40px;
+        width: 120px;
         background-color: rgb(50, 48, 48);
         color: aliceblue;
         border-radius: 10px;
