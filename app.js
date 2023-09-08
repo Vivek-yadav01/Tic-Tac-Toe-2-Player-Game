@@ -8,6 +8,7 @@ let strt = false;
 let count1 = 0, count2 = 0;
 const arr1 = [];
 const arr2 = [];
+const arr3 = [];
 
 
 let checkcount = 0;
@@ -28,6 +29,7 @@ function restart() {
       count2 = 0;
       arr1.length = 0;
       arr2.length = 0;
+      arr3.length = 0;
       enablebtn();
       chicken.innerText = "";
       winner.innerText = "";
@@ -49,6 +51,7 @@ for (btn of box) {
          console.log(curr);
 
          arr1.push(curr);
+         arr3.push(curr);
          console.log(arr1);
          count1++;
          this.innerText = "x";
@@ -66,6 +69,7 @@ for (btn of box) {
          let curr2 = this.id;
          console.log("bbhut bdiya sabash");
          arr2.push(curr2);
+         arr3.push(curr2);
          console.log(arr2);
          count2++;
 
@@ -81,8 +85,7 @@ for (btn of box) {
    });
 }
 const check2 = [["first1", "first2", "first3"], ["first1", "first4", "first7"], ["first1", "first5", "first9"], ["first2", "first5", "first8"],
-["first3", "first5", "first7"],["first3", "first6", "first9"],["first4", "first5", "first6"], ["first7", "first8", "first9"]];
-
+["first3", "first5", "first7"], ["first3", "first6", "first9"], ["first4", "first5", "first6"], ["first7", "first8", "first9"]];
 
 function check(check1 = []) {
    for (btn of check2) {
@@ -90,17 +93,33 @@ function check(check1 = []) {
          for (btn1 of check1) {
             if (btn1 == btns) {
                checkcount++;
+
+
+
+
+
             }
          }
       }
       if (checkcount == 3) {
          colorred(btn);
          makebtnenable();
-
          break;
       }
+
+
+
+
       else {
+
+         if (check1.length == 5 && checkcount == 1) {
+            colorgreen(arr3);
+            setTimeout(() => {
+               restart();
+            }, 1000)
+         }
          checkcount = 0;
+
       }
    }
 
@@ -109,9 +128,6 @@ function colorred(btn2 = []) {
    for (let i = 0; i < 3; i++) {
       let elt = document.querySelector(`#${btn2[i]}`);
       elt.classList.add("green");
-
-
-
       setTimeout(() => {
          winner.innerText = "WINNER WINNER";
          chicken.innerText = "CHICKEN DINNER";
@@ -135,4 +151,12 @@ function enablebtn() {
       elts.disabled = false;
    }
 }
+function colorgreen(btn3 = []) {
+   for (let i = 0; i < 9; i++) {
+      let elt = document.querySelector(`#${btn3[i]}`);
+      elt.classList.add("red");
+   }
+   winner.innerText = "It's Tie ";
+   chicken.innerText = "Play Again";
 
+}
