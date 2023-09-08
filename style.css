@@ -31,8 +31,8 @@ body {
 }
 
 .box {
-    width: 11.7vw;
-    height: 11.7vw;
+    width: 150px;
+    height: 150px;
 
     background-color: rgb(255, 255, 255);
     margin: 10px;
