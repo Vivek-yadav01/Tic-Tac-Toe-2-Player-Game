@@ -93,11 +93,6 @@ function check(check1 = []) {
          for (btn1 of check1) {
             if (btn1 == btns) {
                checkcount++;
-
-
-
-
-
             }
          }
       }
@@ -106,22 +101,20 @@ function check(check1 = []) {
          makebtnenable();
          break;
       }
-
-
-
-
       else {
-
-         if (check1.length == 5 && checkcount == 1) {
-            colorgreen(arr3);
-            setTimeout(() => {
-               restart();
-            }, 1000)
-         }
          checkcount = 0;
-
       }
+
+
    }
+   if (check1.length == 5 && checkcount == 0) {
+      colorgreen(arr3);
+      setTimeout(() => {
+         restart();
+      }, 1000)
+   }
+
+
 
 }
 function colorred(btn2 = []) {
