@@ -92,7 +92,7 @@ body {
 }
 
 .common {
-    margin-top: 200px;
+    margin-top: 40vh;
     font-size: 50px;
 
 
@@ -232,7 +232,7 @@ body {
     }
 
     .winner {
-        margin-top: 62vh;
+        margin-top: 65vh;
 
         margin-left: 2px;
         margin-right: 2px;
