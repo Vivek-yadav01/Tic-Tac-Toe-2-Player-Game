@@ -59,7 +59,7 @@ body {
     color: grey;
 
     font-size: 100px;
-    text-shadow: red 1px 1px 5px;
+    text-shadow: rgb(247, 67, 67) 1px 1px 5px;
     transition: all 200ms 0s;
     padding-top: 0;
     background-color: rgb(255, 255, 255)
@@ -67,6 +67,10 @@ body {
 
 .green {
     background-color: green;
+    color: white;
+}
+.red{
+    background-color: rgb(207, 96, 96);
     color: white;
 }
 
@@ -88,25 +92,27 @@ body {
 
 .common {
     margin-top: 200px;
+    font-size: 50px;
+   
 
     height: 200px;
     width: 200px;
     color: white;
-    text-shadow: red 0px 0px 20px;
+    text-shadow: red 0px 0px 15px;
 
 
 }
 
 .winner {
     margin-left: 80px;
-    color: rgb(170, 130, 130);
-    text-shadow: rgb(247, 142, 142) 0px 0px 20px;
+    color: rgb(133, 61, 61);
+    text-shadow: rgb(87, 85, 85) 0px 0px 20px;
 
 }
 
 .chicken {
     margin-right: 90px;
-    color: rgb(255, 255, 255);
+    color: rgb(128, 117, 117);
     text-shadow: red 0px 0px 10px;
 }
 
@@ -214,7 +220,7 @@ body {
 
     .common {
       
-
+  font-size: 30px;
         height: 1px;
         width: 1px;
         color: white;
@@ -226,6 +232,7 @@ body {
 
     .winner {
         margin-top: 62vh;
+        
         margin-left: 2px;
         margin-right: 2px;
         color: rgb(170, 130, 130);
@@ -243,8 +250,6 @@ body {
 
     .restart {
         font-size: 20px;
-        border: 1px
-        
         height: 40px;
         width: 120px;
         background-color: rgb(50, 48, 48);
@@ -262,6 +267,11 @@ body {
         color: rgb(50, 48, 48);
 
     }
+    .red{
+        background-color: rgb(207, 96, 96);
+        color: white;
+    }
+    
 
 
 
