@@ -81,7 +81,7 @@ for (btn of box) {
    });
 }
 const check2 = [["first1", "first2", "first3"], ["first1", "first4", "first7"], ["first1", "first5", "first9"], ["first2", "first5", "first8"],
-["first3", "first5", "first7"], ["first4", "first5", "first6"], ["first7", "first8", "first9"]];
+["first3", "first5", "first7"],["first3", "first6", "first9"],["first4", "first5", "first6"], ["first7", "first8", "first9"]];
 
 
 function check(check1 = []) {
